@@ -32,16 +32,18 @@ header {
 header h1 {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
+  font-size: 48px;
+  margin-bottom: 18px;
 }
 
+header p {
+  font-size: 20px;
+}
 
 .page {
   width: 750px;
   height: 1084px;
   margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -51,7 +53,7 @@ legend, .fieldset-wrapper h1 {
   font-size: 24px;
 }
 
-h1, legend {
+h1, legend, button {
   font-family: "Staatliches", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -79,6 +81,7 @@ fieldset {
   width: 622px;
   height: 0;
   border: 1px solid #E6E6F0;
+  
 }
 
 .full-name {
@@ -96,6 +99,15 @@ input {
   border-radius: 8px;
   height: 56px;
   line-height: 24px;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  outline: 1px solid black;
+
 }
 
 .input-wrapper {
@@ -103,7 +115,53 @@ input {
   flex-direction: column;
 }
 
-.col-3 {
+.full-date {
   display: flex;
-  flex-direction: row;
 }
+
+.schedule-date {
+  margin-right: 32px;
+  width: 300px;
+}
+
+.schedule-time {
+  display: flex;
+  gap: 10px;
+}
+
+.schedule-time input {
+  width: 140px;
+}
+
+footer {
+  margin:0 auto;
+  display:flex;
+  background: #535971;
+  width: 750px;
+  height: 160px;
+  border-radius: 0 0 20px 20px;
+}
+
+button {
+  background:#FF5374;
+  line-height:26px;
+  font-size:20px;
+  width:608px;
+  height: 55.65px;
+  align-items: center;
+  margin: auto;
+  border-radius: 20px; 
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  color: #FFFFFF;
+  border: none;
+}
+
+button:hover {
+  background:#FF1B47;
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
+ }
