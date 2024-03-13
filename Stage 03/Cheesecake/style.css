@@ -17,6 +17,10 @@ body {
     font-size: 1.6rem;
 }
 
+body img:first-child {
+    display: none;
+}
+
 main {
     max-width: 32.0rem;
     margin-inline: auto;
@@ -70,6 +74,16 @@ ul {
 }
 
 @media (min-width: 1120px) {
+    body img:first-child {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
     main {
         flex-direction: row;
         max-width: fit-content;
